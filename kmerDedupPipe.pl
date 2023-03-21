@@ -25,7 +25,7 @@ sub help
 	print"
 	Description: kmer-base redundancy removing pipeline
 
-	-c    <file>  genome sequence       [force]
+	-c    <file>  config file           [force]
 	-k    <file>  output prefix         [force]
 	-o    <dir>   output directory      [force]
 	-s    <dir>   shell directory       [-o]

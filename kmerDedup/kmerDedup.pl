@@ -50,7 +50,7 @@ sub help
 	-mpr  <float>  max duplication percentage  [0.3]
 	-mcv  <int>    min k-mer coverage(\%)       [30]
 	-kmer <int>    k-mer size                  [17]
-	-mode <1/2>    1:ratio only; 2:ratio * cov [2]
+	-mode <1/2>    1:ratio only; 2:ratio * cov [1]
 	-s    <bin>    samtools binary             [/Bio/bin/samtools-1.14]
 	-t    <int>    threads for samtools view   [4]
 	-h           Help document
@@ -67,7 +67,7 @@ $mpercent //= 0.3;
 $mcov //= 30;
 $threads ||= 4;
 $kmer ||= 17;
-$mode ||= 2;
+$mode ||= 1;
 
 $fasta = &abs_dir($fasta);
 

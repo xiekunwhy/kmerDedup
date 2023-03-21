@@ -11,9 +11,10 @@ Notes
 1. polish your assembly first if it was generated from long noisy reads;
 2. don't use long noisy reads in this pipeline. You can use pacbio-hifi reads and/or ngs reads.
 
-There are 3 steps to run this pipeline, 
+There are 4 steps to run this pipeline, 
 1. use jellyfish2 to count and dump k-mer sequences, than filter the dump file using fa2fa.pl script; 
 2. map k-mer sequences to contigs/scaffolds using bowtie2 and use BamDeal to calculate coverage;
-3. use kmerDedup.pl (core program in this pipeline) to select longest contig/scaffold set.
+3. use kmerDedup.pl (core program in this pipeline) to select longest contig/scaffold set;
+4. (optional) use purge_dups to purge dups if you feel the kmerDedup.pl results. 
 
 TO DO: write each step clearer.

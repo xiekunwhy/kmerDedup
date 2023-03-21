@@ -1,6 +1,6 @@
 # kmerDedup
 Reduce genome assembly redundancy using shared mapped k-mer method.
-This pipeline was inspired by khaper, but I have never seen the source code of the core program "Compress".
+This pipeline was inspired by khaper, but I have never seen the source code of the core program "Compress" in khaper pipeline.
 
 Use cases
 1. assembling software (flye, canu, ipa, hifiasm, masurca, wtdbg2 or any others) generate larger genome size than expected and purge_dups can not work well (no distinct depth peaks when using purge_dups or purge_haplotigs);

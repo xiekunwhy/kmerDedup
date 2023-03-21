@@ -9,13 +9,12 @@ use Data::Dumper;
 use List::Util qw{any first};
 use Bio::SeqIO;
 ############# GetOptions #################
-my ($dumfile, $outfile, $peakfile);
+my ($dumfile, $outfile);
 my ($lower, $upper);
 GetOptions(
 	"h|?"=>\&help,
 	"d:s"=>\$dumfile,
 	"o:s"=>\$outfile,
-	"p:s"=>\$peakfile,
 	"l:s"=>\$lower,
 	"u:s"=>\$upper,
 ) || &help;
@@ -28,7 +27,6 @@ sub help
 
 	-d  <file>  jellyfish dump file         [force]
 	-o  <file>  output fasta file           [force]
-	-p  <file>  depth peak file             [optional]
 	-l  <int>   lower bound of k-mer        [3]
 	-u  <int>   upper bound of k-mer depth
 	            0 means unlimit             [500000]
@@ -42,15 +40,8 @@ print "Programe start: $current_T\n\n";
 my $begin_time = time();
 ##########################################
 $dumfile = &abs_dir($dumfile);
-if($peakfile){
-	$peakfile = &abs_dir($peakfile);
-}
 $lower //= 3;
 $upper //= 500000;
-
-if($upper eq "auto" && !$peakfile){
-	die("ERROR: histo file must given when -u is auto!\n");
-}
 
 my $i = 1;
 open(IN, $dumfile);

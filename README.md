@@ -177,7 +177,7 @@ You can try -mpr 0.3 first.
 ```
 /Bio/bin/perl kmerDedup/kmerDedup.pl -k ath -mpr 0.3 -mcv 30 -kmer 21 -o 05.kmerdedup -f /WORK/Bio/Project/pipe/assembly/dedup/pipe/01.ref/ath.format.fa -bam /WORK/Bio/Project/pipe/assembly/dedup/pipe/04.merge/ath.sort.bam -cov /WORK/Bio/Project/pipe/assembly/dedup/pipe/04.merge/ath.cov.stat -s /Bio/bin/samtools-1.14
 ```
-Running time dependant on bam line number and how many scaffod need to compare, for this example data (200M genome (1.7X to expected), about 206 M bam lines), it cost 15 minutes to get results. For a 1G genome and 2X redundancy, 854 M bam lines, it cost 2.5 hours to get results. For a 1G genome and 5.5X redundancy (cat difference software results together or pooled sample), ~4000 M bam lines, it may cost ~30 hours to get results, but worth waiting.
+Running time dependant on bam line number and how many scaffod need to compare, for this example data (200M genome (1.7X to expected), about 206 M bam lines), it cost 15 minutes to get results. For a 0.62G genome and 2X redundancy, 854 M bam lines, it cost 2.5 hours to get results. For a 1G genome and 5.5X redundancy (cat difference software results together or pooled sample), ~4000 M bam lines, it may cost ~30 hours to get results, but worth waiting.
 
 Results
 ```

@@ -75,7 +75,7 @@ wget https://labshare.cshl.edu/shares/schatzlab/www-data/pseudohaploid/arabidops
 ```
 and you will get rawcanu.fa
 
-Choose your best way to download SRR3703081, SRR3703082, SRR3703105 from NCBI, than
+Choose your best way to download SRR3703081, SRR3703082, SRR3703105 from NCBI, then
 
 ```
 cat SRR3703081_1.fastq.gz SRR3703082_1.fastq.gz SRR3703105_1.fastq.gz > ath_R1.fq.gz

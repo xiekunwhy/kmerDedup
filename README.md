@@ -131,6 +131,7 @@ ls /WORK/Bio/Project/pipe/assembly/dedup/pipe/03.mapping/*.bam > /WORK/Bio/Proje
 # step 3 kmerDedup
 
 ## 3.1 run kmerDedup.pl from bam file
+
 ```
 /Bio/bin/perl kmerDedup/kmerDedup.pl
 	Description: remove redundancy using k-mer shared percentage
@@ -178,7 +179,9 @@ Don't use too small -mpr, you can try difference values, but stop using smaller 
 # Example results
 
 BUSCO V 5.3.1 embryophyta_odb10
+
 rawcanu.fa
+
 Nx
 ```
 Total: 214700023
@@ -197,6 +200,7 @@ N80: 50143
 N90: 36026
 N100: 12153
 ```
+
 BUSCO
 ```
 	C:99.0%[S:50.3%,D:48.7%],F:0.5%,M:0.5%,n:1614	   
@@ -207,7 +211,9 @@ BUSCO
 	8	Missing BUSCOs (M)			   
 	1614	Total BUSCO groups searched		   
 ```
+
 pseudohap.fa (pseudohaploid results, https://labshare.cshl.edu/shares/schatzlab/www-data/pseudohaploid/arabidopsis/pseudohap.fa.gz)
+
 Nx
 ```
 Total: 143490505
@@ -235,7 +241,9 @@ N100: 13139
 	13	Missing BUSCOs (M)			   
 	1614	Total BUSCO groups searched		   
 ```
+
 kmerDedup -mpr 0.3 -mode 2
+
 Nx
 ```
 Total: 123325563
@@ -254,6 +262,7 @@ N80: 453978
 N90: 279847
 N100: 13139
 ```
+
 BUSCO
 ```
 	C:98.1%[S:95.2%,D:2.9%],F:0.7%,M:1.2%,n:1614	   
@@ -266,6 +275,7 @@ BUSCO
 ```
 
 kmerDedup -mpr 0.5 -mode 2
+
 Nx
 ```
 Total: 130255158
@@ -284,6 +294,7 @@ N80: 388804
 N90: 199957
 N100: 13139
 ```
+
 BUSCO
 ```
 	C:98.6%[S:94.9%,D:3.7%],F:0.6%,M:0.8%,n:1614	   
@@ -294,6 +305,7 @@ BUSCO
 	13	Missing BUSCOs (M)			   
 	1614	Total BUSCO groups searched		   
 ```
+
 # step 4 run purge_dups if really needed.
 
 # cites

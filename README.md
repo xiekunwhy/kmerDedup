@@ -131,7 +131,7 @@ source /Bio/software/anaconda3/envs/bowtie2/../../bin/activate bowtie2;/Bio/soft
 ## 2.2 mapping k-mers to reference
 Use absolute path if you want to parallelize bowtie2 task submit. -k can be larger if you are dealing with a highly repetitive genome but larger -k may slow down the mapping step and the kmerDedup step.
 -L can be equal to k-mer size or smaller than k-mer size.
-Please don't change --very-sensitive --score-min L,-0.6,-0.2 --end-to-end or add other parameters to allow mismatch unless you really know what are you doing.
+Please don't change --very-sensitive --score-min L,-0.6,-0.2 --end-to-end or add other parameters to allow mismatch unless you really know what you are doing.
 Don't forget to use samtools view -F 4 to filter out unmap k-mers.
 ```
 ls split/|grep ".fa$"|sort -V |sed 's/.fa$//g'|/Bio/bin/perl -lane 'print "source /Bio/software/anaconda3/envs/bowtie2/../../bin/activate bowtie2;/Bio/User/anaconda3/envs/bowtie2/bin/bowtie2 --very-sensitive -k 1000 --score-min L,-0.6,-0.2 --end-to-end --reorder -L 21 --rg-id ath --rg SM:ath -p 6 -f /WORK/Bio/Project/pipe/assembly/dedup/pipe/02.kmer/split/$_.fa -x /WORK/Bio/Project/pipe/assembly/dedup/pipe/01.ref/ath.format |/Bio/bin/samtools-1.14 view -@ 4 -F 4 -bS - > /WORK/Bio/Project/pipe/assembly/dedup/pipe/03.mapping/$_.bam"'> bowtie2.sh

@@ -198,154 +198,33 @@ Don't use too small -mpr, you can try difference values, but stop using smaller 
 
 # Example results
 
+| Nx      | rawcanu.fa | pseudohap.fa | kmerDedup-mpr 0.3 -mode 2 | kmerDedup -mpr 0.5 -mode 2 |
+|---------|------------|--------------|---------------------------|----------------------------|
+| Total   | 214700023  | 143490505    | 123325563                 | 130255158                  |
+| Count   | 2074       | 505          | 216                       | 311                        |
+| Average | 103519.78  | 284139.61    | 570951.68                 | 418826.87                  |
+| Median  | 41735      | 82149        | 296376                    | 138132                     |
+| N00     | 4128881    | 4128881      | 4128881                   | 4128881                    |
+| N10     | 2878449    | 3214456      | 3214456                   | 3214456                    |
+| N20     | 1852867    | 2412251      | 2436491                   | 2436491                    |
+| N30     | 1128124    | 1852867      | 2120621                   | 1949687                    |
+| N40     | 715569     | 1204449      | 1599836                   | 1470490                    |
+| N50     | 350182     | 950253       | 1164438                   | 1109900                    |
+| N60     | 138132     | 715569       | 934741                    | 900377                     |
+| N70     | 75340      | 424773       | 703219                    | 639541                     |
+| N80     | 50143      | 259779       | 453978                    | 388804                     |
+| N90     | 36026      | 107428       | 279847                    | 199957                     |
+| N100    | 12153      | 13139        | 13139                     | 13139                      |
+
+
 BUSCO V 5.3.1 embryophyta_odb10
 
-Nx	rawcanu.fa	pseudohap.fa	kmerDedup
--mpr 0.3 -mode 2	kmerDedup
--mpr 0.5 -mode 2
-Total	214700023	143490505	123325563	130255158
-Count	2074	505	216	311
-Average	103519.78	284139.61	570951.68	418826.87
-Median	41735	82149	296376	138132
-N00	4128881	4128881	4128881	4128881
-N10	2878449	3214456	3214456	3214456
-N20	1852867	2412251	2436491	2436491
-N30	1128124	1852867	2120621	1949687
-N40	715569	1204449	1599836	1470490
-N50	350182	950253	1164438	1109900
-N60	138132	715569	934741	900377
-N70	75340	424773	703219	639541
-N80	50143	259779	453978	388804
-N90	36026	107428	279847	199957
-N100	12153	13139	13139	13139
-
-rawcanu.fa
-
-Nx
-```
-Total: 214700023
-Count: 2074
-Average: 103519.78
-Median: 41735
-N00: 4128881
-N10: 2878449
-N20: 1852867
-N30: 1128124
-N40: 715569
-N50: 350182
-N60: 138132
-N70: 75340
-N80: 50143
-N90: 36026
-N100: 12153
-```
-
-BUSCO
-```
-	C:99.0%[S:50.3%,D:48.7%],F:0.5%,M:0.5%,n:1614	   
-	1598	Complete BUSCOs (C)			   
-	812	Complete and single-copy BUSCOs (S)	   
-	786	Complete and duplicated BUSCOs (D)	   
-	8	Fragmented BUSCOs (F)			   
-	8	Missing BUSCOs (M)			   
-	1614	Total BUSCO groups searched		   
-```
-
-pseudohap.fa (pseudohaploid results, https://labshare.cshl.edu/shares/schatzlab/www-data/pseudohaploid/arabidopsis/pseudohap.fa.gz)
-
-Nx
-```
-Total: 143490505
-Count: 505
-Average: 284139.61
-Median: 82149
-N00: 4128881
-N10: 3214456
-N20: 2412251
-N30: 1852867
-N40: 1204449
-N50: 950253
-N60: 715569
-N70: 424773
-N80: 259779
-N90: 107428
-N100: 13139
-```
-
-BUSCO
-```
-	C:98.7%[S:90.2%,D:8.5%],F:0.5%,M:0.8%,n:1614	   
-	1593	Complete BUSCOs (C)			   
-	1456	Complete and single-copy BUSCOs (S)	   
-	137	Complete and duplicated BUSCOs (D)	   
-	8	Fragmented BUSCOs (F)			   
-	13	Missing BUSCOs (M)			   
-	1614	Total BUSCO groups searched		   
-```
-
-kmerDedup -mpr 0.3 -mode 2
-
-Nx
-```
-Total: 123325563
-Count: 216
-Average: 570951.68
-Median: 296376
-N00: 4128881
-N10: 3214456
-N20: 2436491
-N30: 2120621
-N40: 1599836
-N50: 1164438
-N60: 934741
-N70: 703219
-N80: 453978
-N90: 279847
-N100: 13139
-```
-
-BUSCO
-```
-	C:98.1%[S:95.2%,D:2.9%],F:0.7%,M:1.2%,n:1614	   
-	1584	Complete BUSCOs (C)			   
-	1537	Complete and single-copy BUSCOs (S)	   
-	47	Complete and duplicated BUSCOs (D)	   
-	11	Fragmented BUSCOs (F)			   
-	19	Missing BUSCOs (M)			   
-	1614	Total BUSCO groups searched		   
-```
-
-kmerDedup -mpr 0.5 -mode 2
-
-Nx
-```
-Total: 130255158
-Count: 311
-Average: 418826.87
-Median: 138132
-N00: 4128881
-N10: 3214456
-N20: 2436491
-N30: 1949687
-N40: 1470490
-N50: 1109900
-N60: 900377
-N70: 639541
-N80: 388804
-N90: 199957
-N100: 13139
-```
-
-BUSCO
-```
-	C:98.6%[S:94.9%,D:3.7%],F:0.6%,M:0.8%,n:1614	   
-	1591	Complete BUSCOs (C)			   
-	1531	Complete and single-copy BUSCOs (S)	   
-	60	Complete and duplicated BUSCOs (D)	   
-	10	Fragmented BUSCOs (F)			   
-	13	Missing BUSCOs (M)			   
-	1614	Total BUSCO groups searched		   
-```
+| Method                     | Complete BUSCOs (C) | Complete and single-copy BUSCOs (S) | Complete and duplicated BUSCOs (D) | Fragmented BUSCOs (F) | Missing BUSCOs (M) | Total BUSCO groups searched |
+|----------------------------|---------------------|-------------------------------------|------------------------------------|-----------------------|--------------------|-----------------------------|
+| rawcanu                    | 1598 (99.01%)       | 812 (50.31%)                        | 786 (48.70%)                       | 8 (0.50%)             | 8 (0.50%)          | 1614 (100.00%)              |
+| pseudohap                  | 1593 (98.70%)       | 1456 (90.21%)                       | 137 (8.49%)                        | 8 (0.50%)             | 13 (0.81%)         | 1614 (100.00%)              |
+| kmerDedup -mpr 0.3 -mode 2 | 1584 (98.14%)       | 1537 (95.23%)                       | 47 (2.91%)                         | 11 (0.68%)            | 19 (1.18%)         | 1614 (100.00%)              |
+| kmerDedup -mpr 0.5 -mode 2 | 1591 (98.57%)       | 1531 (94.86%)                       | 60 (3.72%)                         | 10 (0.62%)            | 13 (0.81%)         | 1614 (100.00%)              |
 
 # step 4 run purge_dups if really needed.
 

@@ -329,6 +329,6 @@ BUSCO
 # step 4 run purge_dups if really needed.
 
 # cites
-I am working in industry and my english is so so, so I am not so professional to write papers, and there is no related paper in the near further. You can cite this github repository directory, but in your own risk.
+I am working in industry and my english is so so, so I am not so professional to write papers, and there is no related paper in the near further. You can cite this github repository directly, but in your own risk.
 
 You may need to cite the corresponding papers of which you have used in this pipeline.

@@ -23,29 +23,49 @@ There are 4 steps to run this pipeline,
 
 # Dependences
 1. software
+
 perl https://www.perl.org
+
 parallel https://www.gnu.org/software/parallel
+
 jellyfish2 https://github.com/gmarcais/Jellyfish
+
 bowtie2 https://github.com/BenLangmead/bowtie2
+
 BamDeal https://github.com/BGI-shenzhen/BamDeal
+
 samtools http://www.htslib.org
+
 pigz https://github.com/madler/pigz
 
 optional software (if you want to run purge_dups after kmerDedup)
+
 purge_dups https://github.com/dfguan/purge_dups
+
 bwa-mem2 (for short reads mapping) https://github.com/bwa-mem2/bwa-mem2
+
 minimap2 (for long reads mapping) https://github.com/lh3/minimap2
 
 2. perl modules
+
 use strict;
+
 use warnings;
+
 use Getopt::Long;
+
 use File::Spec;
+
 use File::Basename qw(basename dirname);
+
 use FindBin qw($Bin $Script);
+
 use Data::Dumper;
+
 use List::Util qw{any first};
+
 use Storable;
+
 use Bio::SeqIO;
 
 # Testing data

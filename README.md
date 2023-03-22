@@ -159,13 +159,14 @@ You can try -mpr 0.3 first.
 Running time dependant on bam line number and how many scaffod need to compare, for this example data (200M genome (1.7X to expected), about 206 M bam lines), it cost 15 minutes to get results. For a 1G genome and 2X redundancy, 854 M bam lines, it cost 2.5 hours to get results. For a 1G genome and 5.5X redundancy (cat difference software results together or pooled sample), ~4000 M bam lines, it may cost ~30 hours to get results, but worth waiting.
 
 Results
+```
 ├── ath.all.xls     ## all contig records
 ├── ath.bam.log     ## progressing log
 ├── ath.drop.fa     ## droped contig in fasta format
 ├── ath.dump.hash   ## mapped k-mer count and share mapped k-mer count hash, use this file if you want to adjust -mpr
 ├── ath.keep.fa     ## keep contig in fasta format
 └── ath.keep.xls    ## same as ath.all.xls but only kept contigs
-
+```
 
 ## 3.2 adjust -mpr
 Use 05.kmerdedup/ath.dump.hash instead of bam to save running time.
@@ -293,6 +294,8 @@ BUSCO
 	13	Missing BUSCOs (M)			   
 	1614	Total BUSCO groups searched		   
 ```
+# step 4 run purge_dups if really needed.
+
 # cites
 I am working in industry and my english is so so, so I am not so professional to write papers, and there is no related paper in the near further. You can cite this github repository directory, but in your own risk.
 

@@ -5,7 +5,7 @@ This pipeline was inspired by khaper (https://github.com/tangerzhang/khaper, htt
 Use cases
 1. assembling software (flye, canu, ipa, hifiasm, masurca, wtdbg2 or any others) generate larger genome size than expected and purge_dups can not work well (no distinct depth peaks when using purge_dups or purge_haplotigs);
 2. pooled sample assembly (assembling software may give you 2-4X larger genome size than expected);
-3. there are several assemblies generated from different softwares, and you may want to cat then together and choose longer non-redundancy contig/scaffold set.
+3. there are several assemblies generated from different softwares, and you may want to cat them together and choose longer non-redundancy contig/scaffold set.
 
 Notes
 1. polish your assembly first if it was generated from long noisy reads;

@@ -219,12 +219,15 @@ Don't use too small -mpr, you can try difference values, but stop using smaller 
 
 BUSCO V 5.3.1 embryophyta_odb10
 
-| Method                     | Complete BUSCOs (C) | Complete and single-copy BUSCOs (S) | Complete and duplicated BUSCOs (D) | Fragmented BUSCOs (F) | Missing BUSCOs (M) | Total BUSCO groups searched |
-|----------------------------|---------------------|-------------------------------------|------------------------------------|-----------------------|--------------------|-----------------------------|
-| rawcanu                    | 1598 (99.01%)       | 812 (50.31%)                        | 786 (48.70%)                       | 8 (0.50%)             | 8 (0.50%)          | 1614 (100.00%)              |
-| pseudohap                  | 1593 (98.70%)       | 1456 (90.21%)                       | 137 (8.49%)                        | 8 (0.50%)             | 13 (0.81%)         | 1614 (100.00%)              |
-| kmerDedup -mpr 0.3 -mode 2 | 1584 (98.14%)       | 1537 (95.23%)                       | 47 (2.91%)                         | 11 (0.68%)            | 19 (1.18%)         | 1614 (100.00%)              |
-| kmerDedup -mpr 0.5 -mode 2 | 1591 (98.57%)       | 1531 (94.86%)                       | 60 (3.72%)                         | 10 (0.62%)            | 13 (0.81%)         | 1614 (100.00%)              |
+| Method                              | rawcanu        | pseudohap      | kmerDedup -mpr 0.3 -mode 2 | kmerDedup -mpr 0.5 -mode 2 |
+|-------------------------------------|----------------|----------------|----------------------------|----------------------------|
+| Complete BUSCOs (C)                 | 1598 (99.01%)  | 1593 (98.70%)  | 1584 (98.14%)              | 1591 (98.57%)              |
+| Complete and single-copy BUSCOs (S) | 812 (50.31%)   | 1456 (90.21%)  | 1537 (95.23%)              | 1531 (94.86%)              |
+| Complete and duplicated BUSCOs (D)  | 786 (48.70%)   | 137 (8.49%)    | 47 (2.91%)                 | 60 (3.72%)                 |
+| Fragmented BUSCOs (F)               | 8 (0.50%)      | 8 (0.50%)      | 11 (0.68%)                 | 10 (0.62%)                 |
+| Missing BUSCOs (M)                  | 8 (0.50%)      | 13 (0.81%)     | 19 (1.18%)                 | 13 (0.81%)                 |
+| Total BUSCO groups searched         | 1614 (100.00%) | 1614 (100.00%) | 1614 (100.00%)             | 1614 (100.00%)             |
+
 
 # step 4 run purge_dups if really needed.
 

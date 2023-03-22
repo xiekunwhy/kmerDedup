@@ -198,6 +198,9 @@ Don't use too small -mpr, you can try difference values, but stop using smaller 
 
 # Example results
 
+pseudohap.fa (pseudohaploid) https://labshare.cshl.edu/shares/schatzlab/www-data/pseudohaploid/arabidopsis/pseudohap.fa.gz
+
+
 | Nx      | rawcanu.fa | pseudohap.fa | kmerDedup-mpr 0.3 -mode 2 | kmerDedup -mpr 0.5 -mode 2 |
 |---------|------------|--------------|---------------------------|----------------------------|
 | Total   | 214700023  | 143490505    | 123325563                 | 130255158                  |
@@ -219,7 +222,7 @@ Don't use too small -mpr, you can try difference values, but stop using smaller 
 
 BUSCO V 5.3.1 embryophyta_odb10
 
-| Method                              | rawcanu        | pseudohap      | kmerDedup -mpr 0.3 -mode 2 | kmerDedup -mpr 0.5 -mode 2 |
+| Method                              | rawcanu.fa        | pseudohap.fa      | kmerDedup -mpr 0.3 -mode 2 | kmerDedup -mpr 0.5 -mode 2 |
 |-------------------------------------|----------------|----------------|----------------------------|----------------------------|
 | Complete BUSCOs (C)                 | 1598 (99.01%)  | 1593 (98.70%)  | 1584 (98.14%)              | 1591 (98.57%)              |
 | Complete and single-copy BUSCOs (S) | 812 (50.31%)   | 1456 (90.21%)  | 1537 (95.23%)              | 1531 (94.86%)              |

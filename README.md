@@ -16,7 +16,7 @@ Limits
 2. can not deal with chimera contigs/scaffolds because kmerDedup do not break and don't know how to break chimera.
 
 There are 4 steps to run this pipeline, 
-1. use jellyfish2 to count and dump k-mer sequences, than filter the dump file using kmerFilter.pl script; 
+1. use jellyfish2 to count and dump k-mer sequences, then filter the dump file using kmerFilter.pl script; 
 2. map k-mer sequences to contigs/scaffolds using bowtie2 and use BamDeal to calculate coverage;
 3. use kmerDedup.pl (core program in this pipeline) to select longest contig/scaffold set;
 4. (optional) use purge_dups to purge kmerDedup.pl results if the kmerDedup.pl result is still larger than expected.

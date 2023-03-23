@@ -87,6 +87,13 @@ or
 zcat SRR3703081_2.fastq.gz SRR3703082_2.fastq.gz SRR3703105_2.fastq.gz |pigz -p 6 -c > ath_R2.fq.gz
 ```
 
+**print shell of each step**
+```
+/Bio/bin/perl /Bio/pipeline/genome/assemble/bin/kmerDedupPipe.pl -c kmerDedupPipe.config -k ath -o pipe
+```
+
+You will find scripts in pipe/shell directory, submit them step by step. qsub-sge is used in mapping step, if you are working in an other cluster system, please use your own method to submit the mapping jobs.
+
 # step 1 count and filter k-mers
 k-mer size, you can use 17 19 21 23 or others, and you can try difference sizes if you want, I don't known what size is the best so far, I think all sizes may work.
 ## 1.1 count k-mers

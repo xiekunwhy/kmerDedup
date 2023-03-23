@@ -88,6 +88,7 @@ zcat SRR3703081_2.fastq.gz SRR3703082_2.fastq.gz SRR3703105_2.fastq.gz |pigz -p 
 ```
 
 **print shell of each step**
+
 Please don't forget to change the readlist.txt path and the genome path and software path before running this script.
 ```
 /Bio/bin/perl /Bio/pipeline/genome/assemble/bin/kmerDedupPipe.pl -c kmerDedupPipe.config -k ath -o pipe

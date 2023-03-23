@@ -96,6 +96,8 @@ Please don't forget to change the readlist.txt path and the genome path and soft
 
 You will find scripts in pipe/shell directory, submit them step by step. qsub-sge is used in mapping step, if you are working in an other cluster system, please use your own method to submit the mapping jobs.
 
+If you fail to run kmerDedupPipe.pl, you can run the pipeline following the following steps.
+
 # step 1 count and filter k-mers
 k-mer size, you can use 17 19 21 23 or others, and you can try difference sizes if you want, I don't known what size is the best so far, I think all sizes may work.
 ## 1.1 count k-mers

@@ -1,0 +1,2 @@
+ngs	r1	/WORK/Bio/Project/xiek/pipe/assembly/dedup/ath_R1.fq.gz
+ngs	r2	/WORK/Bio/Project/xiek/pipe/assembly/dedup/ath_R2.fq.gz

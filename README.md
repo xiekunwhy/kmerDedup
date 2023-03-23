@@ -68,7 +68,7 @@ use Storable;
 
 use Bio::SeqIO;
 
-# Testing data
+# Example data
 The writer of pseudohaploid (https://github.com/schatzlab/pseudohaploid) provide a good testing data. You can download canu results from this link (http://labshare.cshl.edu/shares/schatzlab/www-data/pseudohaploid/arabidopsis) and download corresponding short reads data from NCBI (SRR3703081, SRR3703082, SRR3703105).
 ```
 wget https://labshare.cshl.edu/shares/schatzlab/www-data/pseudohaploid/arabidopsis/rawcanu.fa.gz && gunzip rawcanu.fa.gz

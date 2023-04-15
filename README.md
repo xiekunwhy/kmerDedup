@@ -212,7 +212,7 @@ Don't use too small -mpr, you can try difference values, but stop using smaller 
 pseudohap.fa (pseudohaploid) https://labshare.cshl.edu/shares/schatzlab/www-data/pseudohaploid/arabidopsis/pseudohap.fa.gz
 
 
-| Nx      | rawcanu.fa | pseudohap.fa | kmerDedup-mpr 0.3 -mode 2 | kmerDedup -mpr 0.5 -mode 2 |
+| Nx      | rawcanu.fa | pseudohap.fa | kmerDedup -mpr 0.3 -mode 2 | kmerDedup -mpr 0.5 -mode 2 |
 |---------|------------|--------------|---------------------------|----------------------------|
 | Total   | 214700023  | 143490505    | 123325563                 | 130255158                  |
 | Count   | 2074       | 505          | 216                       | 311                        |

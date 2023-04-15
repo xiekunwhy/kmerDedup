@@ -43,7 +43,7 @@ if(!-d $outdir){
 	mkdir $outdir;
 }
 $outdir = &abs_dir($outdir);
-$snumer = 5000000;
+$snumer ||= 5000000;
 
 $/ = ">";
 my $li = 1;

@@ -128,7 +128,7 @@ fi
 You don't need to split ath.filt.fa if you don't want to run bowtie2 parallel.
 ```
 /Bio/software/anaconda3/envs/jellyfish/bin/jellyfish dump -c -t -o ath.dump.all ath.count.jf
-/Bio/bin/perl kmerDedup/kmerFilter.pl -d ath.dump.all -o ath.filt.fa -l 3 -u 500
+/Bio/bin/perl kmerDedup/kmerFilter.pl -d ath.dump.all -o ath.filt.fa -l 3 -u 100000
 /Bio/bin/perl kmerDedup/splitFasta.pl -f ath.filt.fa -o split -k ath.kmer
 ```
 

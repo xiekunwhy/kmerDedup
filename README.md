@@ -124,7 +124,7 @@ fi
 /Bio/software/anaconda3/envs/jellyfish/bin/jellyfish histo -t 30 ath.count.jf|/Bio/bin/perl -lane 'my ($dpt, $cnt) = split(/\s+/, $_); my $nn = $dpt * $cnt;print "$dpt\t$cnt\t$nn"' > ath.histo
 ```
 ## 1.3 dump k-mers
--l 3 (no inculding, it means all k-mers with depth <= 3 will be deleted) is suitable for many case, -u can be very large, I think 500-1000 may suitable for many case unless you are dealing with a highly repetitive genome.
+-l 3 (no inculding, it means all k-mers with depth <= 3 will be deleted) is suitable for many case, -u can be very large, I think 100000 may suitable for many case unless you are dealing with a highly repetitive genome.
 You don't need to split ath.filt.fa if you don't want to run bowtie2 parallel.
 ```
 /Bio/software/anaconda3/envs/jellyfish/bin/jellyfish dump -c -t -o ath.dump.all ath.count.jf

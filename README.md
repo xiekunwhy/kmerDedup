@@ -249,3 +249,6 @@ BUSCO V 5.3.1 embryophyta_odb10
 I am working in industry and my english is so so, so I am not so professional to write papers, and there is no related paper in the near further. You can cite this github repository directly, but in your own risk.
 
 You may need to cite the corresponding papers of the software which you have used in this pipeline.
+
+# cited by
+[Abalde S, Tellgren-Roth C, Heintz J, et al. The draft genome of the microscopic Nemertoderma westbladi sheds light on the evolution of Acoelomorpha genomes[J]. Frontiers in Genetics, 2023, 14: 1244493.](https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2023.1244493/full)

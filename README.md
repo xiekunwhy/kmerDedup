@@ -13,7 +13,7 @@ Notes
 
 Limits
 1. only work for diploid, I think;
-2. can not deal with chimera contigs/scaffolds because kmerDedup do not break and don't know how to break chimera.
+2. can not deal with chimeric contigs/scaffolds because kmerDedup do not break and don't know how to break chimeric.
 
 There are 4 steps to run this pipeline, 
 1. use jellyfish2 to count and dump k-mer sequences, then filter the dump file using kmerFilter.pl script; 
